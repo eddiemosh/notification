@@ -1,0 +1,27 @@
+<div>
+    <h2>Send Notification</h2>
+    <form (submit)="sendNotification()">
+      <label for="token">Device Token:</label>
+      <input id="token" [(ngModel)]="token" name="token" required>
+      
+      <label for="title">Title:</label>
+      <input id="title" [(ngModel)]="title" name="title" required>
+      
+      <label for="body">Body:</label>
+      <input id="body" [(ngModel)]="body" name="body" required>
+      
+      <button type="submit">Send Notification</button>
+    </form>
+    
+    <h2>Send Text Message</h2>
+    <form (submit)="sendTextMessage()">
+      <label for="phoneNumber">Phone Number:</label>
+      <input id="phoneNumber" [(ngModel)]="phoneNumber" name="phoneNumber" required>
+      
+      <label for="textMessage">Message:</label>
+      <input id="textMessage" [(ngModel)]="textMessage" name="textMessage" required>
+      
+      <button type="submit">Send Text Message</button>
+    </form>
+  </div>
+  
